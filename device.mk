@@ -12,10 +12,10 @@ $(call inherit-product, vendor/oneplus/guacamole/guacamole-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosip
+    $(LOCAL_PATH)/overlay-derp
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aosip/frameworks/base/packages/SystemUI
+    $(LOCAL_PATH)/overlay-derp/frameworks/base/packages/SystemUI
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -36,9 +36,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Gapps
+# Derpfest Stuff
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 TARGET_MINIMAL_APPS := false
 TARGET_INCLUDE_STOCK_ARCORE := true
+BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
