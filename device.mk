@@ -27,14 +27,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# Camera
+PRODUCT_PACKAGES += \
+    vendor.lineage.camera.motor@1.0 \
+    vendor.lineage.camera.motor@1.0-service.oneplus_msmnile \
+    OnePlusCameraHelper
+
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Derpfest Stuff
-TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-IS_PHONE := true
-TARGET_MINIMAL_APPS := false
-TARGET_INCLUDE_STOCK_ARCORE := true
-BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
