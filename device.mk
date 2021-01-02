@@ -30,8 +30,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    vendor.lineage.camera.motor@1.0 \
-    vendor.lineage.camera.motor@1.0-service.oneplus_msmnile \
     OnePlusCameraHelper
 
 
