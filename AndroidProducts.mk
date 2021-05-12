@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_guacamole.mk
+    $(LOCAL_DIR)/dot_guacamole.mk
+
+COMMON_LUNCH_CHOICES := \
+	dot_guacamole-user \
+ 	dot_guacamole-userdebug \
+	dot_guacamole-eng

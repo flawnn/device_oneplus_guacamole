@@ -8,11 +8,11 @@
 BOARD_VENDOR := oneplus
 DEVICE_PATH := device/oneplus/guacamole
 
+# Broken Headers
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Display
 TARGET_SCREEN_DENSITY := 560
-
-# Kernel
-TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
