@@ -13,7 +13,6 @@ $(call inherit-product, device/oneplus/guacamole/device.mk)
 
 # Inherit some common dotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
-$(call inherit-product, vendor/gms/products/gms.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dot_guacamole
@@ -32,7 +31,10 @@ TARGET_SCREEN_WIDTH := 1440
 
 # Include Gapps
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := True
+WITH_GAPPS := true
+
+# FOD
+EXTRA_FOD_ANIMATIONS := true
 
 # Build info
 BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/1909110008:user/release-keys"
